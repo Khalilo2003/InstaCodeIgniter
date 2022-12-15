@@ -1,0 +1,42 @@
+.post-date{
+    background: #f4f4f4;
+    padding: 4px;
+    margin: 3px 0;
+    display: block;
+}
+
+.post-thumb{
+    size: 100%;
+}
+
+.likeButton{
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    background-color: #fafafa;
+}
+
+.likeButton i{
+    font-size: 5rem;
+    transition: .2s ease;
+}
+
+.likeButton:hover i{
+    color: #f50057;
+    text-shadow: 0px 0px 3px #f50057;
+}
+
+.dislikeButton{
+    padding: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1);
+    background-color: #fafafa;
+}
+
+.dislikeButton i{
+    font-size: 5rem;
+    transition: .2s ease;
+}
+
+.dislikeButton:hover i{
+    color: #f50057;
+    text-shadow: 0px 0px 3px #f50057;
+}
