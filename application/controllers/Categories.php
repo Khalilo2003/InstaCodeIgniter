@@ -5,7 +5,7 @@
 
             $data['categories'] = $this->category_model->get_categories();
 
-            // $this->load->view('templates/header');
+            $this->load->view('templates/header');
             $this->load->view('categories/index', $data);
             $this->load->view('templates/footer');
 
@@ -23,6 +23,10 @@
 
             } else{
                 $this->category_model->create_category();
+
+                //Set message
+                $this->session->set_flashdata('category_created', 'Your category has been created');
+
                 redirect('categories');
             }
         }
@@ -36,4 +40,5 @@
             $this->load->view('posts/index', $data);
             $this->load->view('templates/footer');
         }
+        
     }

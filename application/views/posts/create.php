@@ -1,7 +1,8 @@
-<h2><?= $title ?></h2>
+<h2><?= $title; ?></h2>
 
 <?php echo validation_errors(); ?>
 
+<!-- Function that you can use files to uploud pictures for example. -->
 <?php echo form_open_multipart('posts/create'); ?>
     <div class="form-group">
         <label>Title</label>
